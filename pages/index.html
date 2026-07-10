@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Live Attendance Tracker</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/StudentList.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<header>
+
+    <div class="top">
+
+        <div class="logo-title">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 -960 960 960"
+                 fill="#e3e3e3">
+                <path d="m390-80-68-120H190l-90-160 68-120-68-120 90-160h132l68-120h180l68 120h132l90 160-68 120 68 120-90 160H638L570-80H390Zm248-440h86l44-80-44-80h-86l-45 80 45 80ZM438-400h84l45-80-45-80h-84l-45 80 45 80Zm0-240h84l46-81-45-79h-86l-45 79 46 81ZM237-520h85l45-80-45-80h-85l-45 80 45 80Zm0 240h85l45-80-45-80h-86l-44 80 45 80Zm200 120h86l45-79-46-81h-84l-46 81 45 79Zm201-120h85l45-80-45-80h-85l-45 80 45 80Z"/>
+            </svg>
+
+            <div class="text">
+                <h1 class="title">STUDENTS LIVE ATTENDANCE TRACKER</h1>
+                <p class="academic-title">
+                    Academic Year 2026–2027 @KA-IT-SLC
+                </p>
+            </div>
+
+        </div>
+
+        <div class="exports">
+            <button class="ExportExcel">Export to Excel</button>
+            <button class="ExportText">Export to Text</button>
+            <a href="https://carls-world.netlify.app" target="_blank" class="manageStudent">GET KNOW ME</a>
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+<div class="container">
+
+    <div class="time-container">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        height="38px" 
+        width="38px" 
+        fill="#e39231"
+        viewBox="0 -960 960 960" 
+        ><path d="M400-440ZM120-80q-33 0-56.5-23.5T40-160v-560q0-33 23.5-56.5T120-800h320v80H120v560h560v-240h80v240q0 33-23.5 56.5T680-80H120Zm80-160h80v-280h-80v280Zm160 0h80v-400h-80v400Zm160 0h80v-160h-80v160Zm200-240q-30 0-59-9t-54-26l-15 14q-12 11-28.5 11T536-501q-11-11-11-28t11-28l16-16q-16-24-24-51t-8-56q0-83 58.5-141.5T720-880h200v200q0 83-58.5 141.5T720-480Zm0-80q50 0 85-35t35-85v-120H720q-50 0-85 35t-35 85q0 13 2.5 25t7.5 24l104-104q11-11 28-11t28 11q12 12 12 28.5T770-678L666-574q13 6 26.5 10t27.5 4Zm-6-119Z"/></svg>
+        <h2 class="timeText">LIVE TIME CHECKERS</h2>
+        <div class="liveClock">
+            <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="28px" fill="#e3e3e3"><path d="M582-298 440-440v-200h80v167l118 118-56 57ZM440-720v-80h80v80h-80Zm280 280v-80h80v80h-80ZM440-160v-80h80v80h-80ZM160-440v-80h80v80h-80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            <h1 id="clock">100</h1>
+        </div>
+    </div>
+
+
+    <div class="studentList">
+    
+    <div class="box1">
+        <svg class="peoplesvg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
+        <H2 class="studentNumber" id="studentNumber">TOTAL STUDENTS:<span id="total">0</span></H2>
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    
+    
+    
+    </div>
+
+</div>
+
+
+
+
+</main>
+<footer><p>THIS IS CREATED FOR EDUCATIONAL PURPOSES.CREATED BY CARL  DICTAAN</p></footer> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../functions/main.js"></script>
+<script src="../animations/ani.js"></script>
+</body>
+</html>
