@@ -1,71 +1,193 @@
+/* ================= STUDENT CARDS ================= */
+
+/* Laptop (Default) */
 .studentList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px; /* Fixed missing value */
+    gap: 20px;
     margin-top: 10vh;
     width: 100%;
-    padding: 0 20px; /* Prevents edge clipping */
+    padding: 0 20px;
 }
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
     display: flex;
-    flex-direction: row; /* Optional: stacks box content vertically */
-    justify-content: center; /* Centers items vertically inside the box */
-    align-items: center; /* Centers items horizontally inside the box */
-    justify-self: center;
-    border-radius: 1rem;
-    min-height: 150px; /* Better than rigid 20vh to prevent content overflow */
-    width: 100%; /* Better practice for grid items than 70% */
-    max-width: 300px; /* Controls maximum size safely */
-    border: 2px solid rgba(104, 38, 165, 0.63);
-    background-color: #192436;
-    color: white;
-    gap: 5%;
-}
-.studentNumber{
-    margin-right: auto;
-    letter-spacing: 2px;
-}
-.span{
-    color: red;
-    margin-left:10px ;
-    font-size: xx-large ;
-}
-.peopleSvg,.girlsvg,.boysvg{
-margin-left: 5%;
-height: 60px;
-width: 40PX;
-}
-.girlNumber,.boyNumber{
-    margin-right: auto;
-    letter-spacing: 2px;
-}
-.attendance{
+    align-items: center;
     justify-content: center;
-    margin-left: 0.5rem;
-    height: 80px;
-    width: 80px;
-}
-.box4{
-    flex-direction: row ;
-}
-.percentAttendance{
-    margin-left: 1rem;
-    position: relative;
-    right: 10px;
-    letter-spacing: 1px;
-    bottom: 0.3rem;
+    justify-self: center;
 
+    width: 100%;
+    max-width: 300px;
+    min-height: 150px;
+
+    background: #192436;
+    border: 2px solid rgba(104, 38, 165, 0.63);
+    border-radius: 1rem;
+
+    color: white;
+    gap: 15px;
+
+    padding: 15px;
 }
-.span1{
+
+.peopleSvg,
+.girlsvg,
+.boysvg {
+    width: 40px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.studentNumber,
+.girlNumber,
+.boyNumber {
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+.attendance {
+    width: 70px;
+    height: 70px;
+}
+
+.span {
+    color: #FFEA08;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.span1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 1rem 1rem 0;
-    background-color: #0c169e9c;
-    height: 100%;
+
     width: 50%;
-    color: rgb(208, 255, 0);
-    font-size: xx-large ;
+    height: 100%;
+
+    background: #0c169e9c;
+    border-radius: 0 1rem 1rem 0;
+
+    color: #FFEA08;
+    font-size: 2rem;
+}
+
+.percentAttendance {
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    .studentList{
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+        margin-top:50px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4{
+        max-width:100%;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .studentList{
+        grid-template-columns:1fr;
+        padding:0 15px;
+        gap:18px;
+        margin-top:40px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4{
+
+        max-width:500px;
+        width:100%;
+        min-height:130px;
+
+        padding:20px;
+    }
+
+    .peopleSvg,
+    .girlsvg,
+    .boysvg{
+
+        width:35px;
+        height:50px;
+    }
+
+    .attendance{
+        width:60px;
+        height:60px;
+    }
+
+    .span,
+    .span1{
+        font-size:1.8rem;
+    }
+
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width:480px){
+
+    .studentList{
+        padding:0 10px;
+        gap:15px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4{
+
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+
+        min-height:auto;
+        padding:20px;
+    }
+
+    .studentNumber,
+    .girlNumber,
+    .boyNumber{
+        margin:0;
+    }
+
+    .attendance{
+        width:55px;
+        height:55px;
+    }
+
+    .span{
+        margin:0;
+        font-size:1.6rem;
+    }
+
+    .span1{
+        width:100%;
+        border-radius:10px;
+        padding:10px;
+        font-size:1.6rem;
+    }
+
+    .percentAttendance{
+        margin:0;
+    }
 
 }
