@@ -24,15 +24,48 @@
 }
 .studentNumber{
     margin-right: auto;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
-#total{
+.span{
     color: red;
     margin-left:10px ;
     font-size: xx-large ;
 }
-.peoplesvg{
-margin-left: 10%;
+.peopleSvg,.girlsvg,.boysvg{
+margin-left: 5%;
 height: 60px;
 width: 40PX;
+}
+.girlNumber,.boyNumber{
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+.attendance{
+    justify-content: center;
+    margin-left: 0.5rem;
+    height: 80px;
+    width: 80px;
+}
+.box4{
+    flex-direction: row ;
+}
+.percentAttendance{
+    margin-left: 1rem;
+    position: relative;
+    right: 10px;
+    letter-spacing: 1px;
+    bottom: 0.3rem;
+
+}
+.span1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    background-color: #0c169e9c;
+    height: 100%;
+    width: 50%;
+    color: rgb(208, 255, 0);
+    font-size: xx-large ;
+
 }
