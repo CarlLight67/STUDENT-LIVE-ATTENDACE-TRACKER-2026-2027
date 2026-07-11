@@ -157,7 +157,7 @@ header {
   max-width: 600px; 
   margin: 2% auto; 
   color: aliceblue; 
-  animation: ease-in-out blinks infinite 1s; 
+  animation: blinks infinite 1s; 
   box-shadow: 0 0 10px 1px #0b3caf98; 
 } 
 

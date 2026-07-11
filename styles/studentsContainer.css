@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. BASE STYLES & MOBILE LAYOUT (Default: Mobile phones & small screens)
-   ========================================================================== */
+
 .containerOfStudents { 
   background-color: #192436; 
   border-radius: 1rem; 
@@ -20,16 +18,16 @@
 } 
 
 @keyframes glow { 
-  from { box-shadow:0 0 0px 0px rgba(11, 182, 182, 0.158); } 
-  to { box-shadow:0 0 10px 2px rgba(11, 182, 182, 0.623); } 
+    from { box-shadow:0 0 0px 0px rgba(11, 182, 182, 0.158); } 
+    to { box-shadow:0 0 10px 2px rgba(11, 182, 182, 0.623); } 
 } 
 
 .sections { 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; 
-  height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: auto; 
 } 
 
 .boysSection, .girlsSection { 
@@ -41,6 +39,7 @@
   width: 90%; 
   overflow-y: auto; 
   box-sizing: border-box; 
+  box-shadow: 0px 0px 10px 0px rgba(96, 34, 178, 0.753);
 } 
 
 .boysSection { border: 3px solid rgb(219, 0, 0); } 
@@ -65,12 +64,18 @@
 /* svg section*/ 
 #_x32_{ 
   fill: hwb(0 100% 0%); 
-  max-height: fit-content; 
+  width: 70px;
+  height: 44px;
+
+
+}
+#Capa_1{
+    fill: antiquewhite;
+    height: 44px;
+    width: 70px;
+    
 }
 
-/* ==========================================================================
-   2. DESKTOP LAYOUT (Screens wider than 768px, like tablets & desktops)
-   ========================================================================== */
 @media (min-width: 768px) {
   .containerOfStudents {
     width: 90%;
@@ -81,9 +86,16 @@
 
   .sections {
     height: 100%;
-  }
-
-  .boysSection, .girlsSection { 
-    height: 75vh; /* Restores your taller locked section height for bigger screens */
-  }
 }
+    
+    .boysSection, .girlsSection { 
+        height: 75vh; /* Restores your taller locked section height for bigger screens */
+    }
+}
+.text{
+    color: rgba(0, 197, 231, 0.877);
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-left: 0.1rem;
+}
+

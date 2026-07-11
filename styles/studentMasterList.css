@@ -1,0 +1,16 @@
+.boysMasterList,.girlsMasterList {
+flex-direction: column;
+display: flex;
+justify-content: start;
+align-self: start;
+width: 100%;
+}
+.user{
+    border: 2px solid rgb(255, 230, 230);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: antiquewhite;
+    font-weight: 200;
+    padding:2%;
+}
